@@ -1,4 +1,4 @@
-## Locally Weighted Regression
+### Locally Weighted Regression
 
 **Main Idea:** Trends and associations are generally nonlinear; however, *locally*, trends can be interpreted linearly.
 
@@ -10,12 +10,6 @@ $$ dist(\vec{v},\vec{w})=\sqrt{(v_1-w_1)^2+(v_2-w_2)^2+...(v_p-w_p)^2}$$
 
 We shall have $n$ different weight vectors because we have $n$ different observations.
 
-![\label{fig:figure1}](/Project1/project1diagram1.drawio
+![\label{fig:figure1}](/Project1/project1diagram1.png)
 
-<figure>
-<center>
-<img src='project1diagram1.drawio' 
-width='500px' />
-
-<figcaption>Intuition for Locally Weighted Regression</figcaption></center>
-</figure>
+Points are weighted by proximity to the current x in question using a kernel. A regression is then computed using the weighted points.
